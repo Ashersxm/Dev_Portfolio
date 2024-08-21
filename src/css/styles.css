@@ -1,0 +1,50 @@
+/* Ensures the footer sticks to the bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Adds padding to the content area to account for the fixed navbar */
+#content {
+    margin-top: 70px; /* Adjust based on your navbar height */
+}
+
+/* Ensures that the footer stays at the bottom even if content is short */
+footer {
+    margin-top: auto;
+}
+
+/* Custom styles for responsive design */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #languageSwitcher {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #content {
+        margin-top: 90px; /* More space for collapsed navbar */
+    }
+}
+
+/* General Styling */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.footer {
+    padding: 1rem;
+}
