@@ -227,3 +227,35 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+$(document).ready(function () {
+    $('.php-email-form').on('submit', function (e) {
+        e.preventDefault(); // Prevent the form from submitting normally
+
+        var formData = $(this).serialize(); // Serialize form data
+
+        $.ajax({
+            type: 'POST',
+            url: 'forms/contact.php', // Your backend PHP file
+            data: formData,
+            dataType: 'json',
+            beforeSend: function () {
+                $('.loading').fadeIn(); // Show the loading animation
+                $('.error-message').fadeOut(); // Hide previous error messages
+                $('.sent-message').fadeOut(); // Hide previous success messages
+            },
+            success: function (response) {
+                $('.loading').fadeOut(); // Hide the loading animation
+                if (response.success) {
+                    $('.sent-message').fadeIn(); // Show the success message
+                } else {
+                    $('.error-message').text(response.message).fadeIn(); // Show the error message
+                }
+            },
+            error: function (xhr, status, error) {
+                $('.loading').fadeOut(); // Hide the loading animation
+                $('.error-message').text('An error occurred. Please try again.').fadeIn(); // Show a general error message
+            }
+        });
+    });
+});

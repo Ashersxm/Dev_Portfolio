@@ -1,0 +1,32 @@
+.justified-text {
+    text-align: justify;
+    padding: 20px; /* Optional: Adds padding around the text */
+    line-height: 1.6; /* Optional: Adjusts line spacing for better readability */
+    font-size: 16px; /* Optional: Adjusts font size */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around; /* Space around each skill for equal spacing */
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    padding: 20px; /* Optional padding around the skills container */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Aligns icon and text vertically */
+    text-align: center; /* Centers the text below the icon */
+}
+
+.skill-icon {
+    font-size: 6em; /* Makes the icons bigger */
+    color: #4A4A4A; /* Color of the icons */
+}
+
+.skill-text {
+    margin-top: 10px; /* Space between the icon and the text */
+    font-size: 1.5rem; /* Adjusts the size of the text */
+    color: #4A4A4A; /* Color of the text */
+}
