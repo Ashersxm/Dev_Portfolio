@@ -146,7 +146,7 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    background-color: var(--background-color);
+    background-color: #060606;
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     width: 300px;
     left: -100%;
@@ -653,38 +653,46 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-container {
+  display: flex;
+  justify-content: space-around; /* Evenly space out the icons */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  padding: 20px 0;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skill-icon {
+  font-size: 6rem;
+  color: inherit; /* Use the inherited color for each icon */
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+.skill-text {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #ffffff; /* You can change this color if needed */
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+/* Make sure all icons have the same size */
+.skill-item i {
+  width: 100px;
+  height: 100px;
+  font-size: 6rem;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
 }
 
 /*--------------------------------------------------------------
