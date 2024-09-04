@@ -228,34 +228,26 @@
 
 })();
 
-$(document).ready(function () {
-    $('.php-email-form').on('submit', function (e) {
-        e.preventDefault(); // Prevent the form from submitting normally
+(function(){
+  emailjs.init("wZpM1stoIzI1VKCGM");
+})();
 
-        var formData = $(this).serialize(); // Serialize form data
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
 
-        $.ajax({
-            type: 'POST',
-            url: 'forms/contact.php', // Your backend PHP file
-            data: formData,
-            dataType: 'json',
-            beforeSend: function () {
-                $('.loading').fadeIn(); // Show the loading animation
-                $('.error-message').fadeOut(); // Hide previous error messages
-                $('.sent-message').fadeOut(); // Hide previous success messages
-            },
-            success: function (response) {
-                $('.loading').fadeOut(); // Hide the loading animation
-                if (response.success) {
-                    $('.sent-message').fadeIn(); // Show the success message
-                } else {
-                    $('.error-message').text(response.message).fadeIn(); // Show the error message
-                }
-            },
-            error: function (xhr, status, error) {
-                $('.loading').fadeOut(); // Hide the loading animation
-                $('.error-message').text('An error occurred. Please try again.').fadeIn(); // Show a general error message
-            }
-        });
-    });
+  emailjs.sendForm('service_1pahx1x', 'template_nwzz1nn', this)
+     .then(function() {
+        document.querySelector('.sent-message').style.display = 'block'; // Show success message
+        document.querySelector('.loading').style.display = 'none'; // Hide loading
+        document.querySelector('.error-message').style.display = 'none'; // Hide error message
+     }, function(error) {
+        document.querySelector('.error-message').textContent = 'Oops, something went wrong: ' + JSON.stringify(error); // Show error
+        document.querySelector('.error-message').style.display = 'block'; // Display error message
+        document.querySelector('.loading').style.display = 'none'; // Hide loading
+     });
+
+  // Optionally, you can show the loading spinner while the form is being submitted
+  document.querySelector('.loading').style.display = 'block';
+  document.querySelector('.sent-message').style.display = 'none';
+  document.querySelector('.error-message').style.display = 'none';
 });
