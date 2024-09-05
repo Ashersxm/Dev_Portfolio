@@ -251,3 +251,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   document.querySelector('.sent-message').style.display = 'none';
   document.querySelector('.error-message').style.display = 'none';
 });
+
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const projectID = this.getAttribute('data-project');
+    console.log('Project clicked:', projectID);
+    localStorage.setItem('selectedProject', projectID);
+    window.location.href = 'project-details.html';
+  });
+});

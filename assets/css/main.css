@@ -1275,6 +1275,7 @@ section,
   color: var(--contrast-color);
   border-radius: 50px;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
