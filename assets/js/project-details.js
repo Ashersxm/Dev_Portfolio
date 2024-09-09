@@ -47,6 +47,20 @@ const projectData = {
       projectDate: 'September 2022 - February 2023',
       projectURL: 'https://www.tcl.fr/',
       media: `<img src="assets/img/projects/ligneD_Lyon.jpg" class="img-fluid" alt="">`
+    },
+    clickAndCollect: {
+      title: 'Click and Collect Demo',
+      description: `
+        <p>Click and collect service where clients can purchase there orders and come and pick them up from the shop without having to browse through the physical store.</p>
+        <p>Save time for both you and your clients!</p>
+      `,
+      category: 'Fullstack Devolpment',
+      client: 'Potential',
+      company : "",
+      companyUrl: "",
+      projectDate: 'Summer 2024',
+      projectURL: '',
+      media: `<video src="assets/video/ClickNCollectDemo.mp4" class="img-fluid" alt="click-and-collect-demo" autoplay muted loop></video>`
     }
   };
   

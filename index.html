@@ -24,33 +24,29 @@
   
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/258d0d7314.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <!-- =======================================================
-    * Template Name: MyResume
-    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-    * Updated: Jun 29 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
   </head>
 <body class="index-page">
 
     <header id="header" class="header d-flex flex-column justify-content-center">
-
+        <i class="header-toggle d-xl-none bi bi-list"></i>
         <i class="header-toggle d-xl-none bi bi-list"></i>
     
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-            <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-            <li><a href="#skills"><i class="bi bi-tools navicon"></i><span>Skills</span></a></li>
-            <li><a href="#portfolio"><i class="bi bi-bounding-box-circles navicon"></i><span>Projects</span></a></li>
-            <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-            <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-          </ul>
-        </nav>
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+    
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-lang="en">Home</span></i><span data-lang="fr" style="display:none;">Accueil</span></a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i><span data-lang="en">About</span><span data-lang="fr" style="display:none;">À Propos</span></a></li>
+          <li><a href="#skills"><i class="bi bi-tools navicon"></i><span data-lang="en">Skills</span><span data-lang="fr" style="display:none;">Compétences</span></a></li>
+          <li><a href="#portfolio"><i class="bi bi-bounding-box-circles navicon"></i><span data-lang="en">Projects</span><span data-lang="fr" style="display:none;">Projets</span></a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span data-lang="en">Services</span><span data-lang="fr" style="display:none;">Services</span></a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-lang="en">Contact</span><span data-lang="fr" style="display:none;">Contact</span></a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span data-lang="en">Resume</span><span data-lang="fr" style="display:none;">CV</span></a></li>
+        </ul>
+      </nav>
     
     </header>
 
@@ -68,6 +64,7 @@
             <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Videographer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://www.linkedin.com/in/brandon-hunt978/"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/590690887059"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
         </div>
@@ -80,38 +77,50 @@
  
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-              <h2>About</h2>
-              <p>Hey there! My name is Brandon, a part-time gymrat and full stack developer. I specialize in creating robust and scalable applications.</p>
-              <p>Have a look through my portfolio where I showcase my passion for learning new technologies and continuously improving my skills to bring you high-quality work.</p>
+              <h2 data-lang="en">About</h2>
+              <h2 data-lang="fr" style="display: none;">À propos</h2>
+            
+              <p data-lang="en">Hey there! My name is Brandon, a part-time gymrat and full stack developer. I specialize in creating robust and scalable applications.</p>
+              <p data-lang="fr" style="display: none;">Salut! Je m'appelle Brandon, un passionné de sport et de développement full-stack. Je me spécialise dans la création d'applications robustes et évolutives.</p>
+            
+              <p data-lang="en">Have a look through my portfolio where I showcase my passion for learning new technologies and continuously improving my skills to bring you high-quality work.</p>
+              <p data-lang="fr" style="display: none;">Jetez un coup d'œil à mon portfolio où je mets en avant ma passion pour l'apprentissage de nouvelles technologies et l'amélioration continue de mes compétences pour vous offrir un travail de haute qualité.</p>
             </div><!-- End Section Title -->
-      
+            
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-      
               <div class="row gy-4 justify-content-center">
                 <div class="col-lg-4">
                   <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 content">
-                  <h2>Software Developer &amp; Event Videographer.</h2>
-                  <p class="fst-italic">
-                  Stemming from a vibrant Caribbean background, I started my studies with an Electrical and Electronic Engineering degree, a bachelor's in Automation and Industrial Computing, and finished off with an engineering diploma in Software Development and Telecommunication.</p>
-                  <p class="fst-italic">If I am not behind a computer, I'm at the gym. If I'm not at the gym, I'm behind a camera capturing the essence of your event!
-                  </p>
+                  <h2 data-lang="en">Software Developer &amp; Event Videographer</h2>
+                  <h2 data-lang="fr" style="display: none;">Apprenti Ingénieur Informaticien et vidéaste événementiel</h2>
+            
+                  <p class="fst-italic" data-lang="en">Stemming from a vibrant Caribbean background, I started my studies with an Electrical and Electronic Engineering degree, a bachelor's in Automation and Industrial Computing, and finished off with an engineering diploma in Software Development and Telecommunication.</p>
+                  <p class="fst-italic" data-lang="fr" style="display: none;">D'origine caribéenne, j'ai commencé mes études par un diplôme en génie électrique et informatique industrielle, puis j'ai entamé une licence en automatisme et informatique industrielle, pour ensuite terminé avec un diplôme d'ingénieur en informatique et réseaux de communication.</p>
+            
+                  <p class="fst-italic" data-lang="en">If I am not behind a computer, I'm at the gym. If I'm not at the gym, I'm behind a camera capturing the essence of your event!</p>
+                  <p class="fst-italic" data-lang="fr" style="display: none;">Si je ne suis pas derrière un ordinateur, je suis à la salle de sport. Si je ne suis pas à la salle, je suis derrière une caméra, entrain de saisir l'âme de votre événement !</p>
+            
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <ul>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Software Engineering and Telecommunication</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>brandon.hunt978@gmail.com</span></li>
-                        <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong data-lang="en">Age:</strong> <strong data-lang="fr" style="display: none;">Âge:</strong> <span>23</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong data-lang="en">Degree:</strong> <strong data-lang="fr" style="display: none;">Diplôme:</strong> <span>Software Engineering and Telecommunication</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong data-lang="en">Email:</strong> <strong data-lang="fr" style="display: none;">Email:</strong> <span>brandon.hunt978@gmail.com</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong data-lang="en">Freelance:</strong> <strong data-lang="fr" style="display: none;">Freelance:</strong> <span>Available</span></li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <p class="container section-title">With over 3 years working for a company that specializes in developing IT solutions for transport infrastructure, I have developed, maintained, and enhanced applications that handle tunnels, highways, and underground trains, along with their databases. My expertise spans frontend and backend development, ensuring a seamless user experience.</p>
-     
+            
+              <p class="container section-title" data-lang="en">With over 3 years working for a company that specializes in developing IT solutions for transport infrastructure, I have developed, maintained, and enhanced applications that handle tunnels, highways, and underground trains, along with their databases. My expertise spans frontend and backend development, ensuring a seamless user experience.</p>
+              
+              <p class="container section-title" data-lang="fr" style="display: none;">Avec plus de 3 ans de travail pour une entreprise spécialisée dans le développement de solutions informatiques pour les infrastructures de transport, j'ai développé, maintenu et amélioré des applications qui gèrent des tunnels, des autoroutes et des métros, ainsi que leurs bases de données. Mon expertise couvre le développement frontend et backend, garantissant une expérience utilisateur fluide.</p>
+            
             </div>
+            
       
           </section><!-- /About Section -->
               
@@ -158,8 +167,10 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Front End Development</h2>
+    <h2 data-lang="en">Front End Development</h2>
+    <h2 data-lang="fr" style="display: none;">Développement Front-End</h2>
   </div><!-- End Section Title -->
+  
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row skills-content skills-animation">
@@ -184,8 +195,10 @@
 
   <!-- Back End Development Section -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Back End Development</h2>
+    <h2 data-lang="en">Back End Development</h2>
+    <h2 data-lang="fr" style="display: none;">Développement Back-End</h2>
   </div><!-- End Section Title -->
+  
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row skills-content skills-animation">
@@ -214,295 +227,363 @@
   </div>
 </section>
 
-        <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section dark-background">
+<!-- Section Portfolio -->
+<section id="portfolio" class="portfolio section dark-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-          <p>Welcome to my project showcase! Here you'll find a selection of my work, where I bring ideas to life through code. 
-            From building web applications to creating intuitive user interfaces, each project reflects my commitment to quality and my passion for technology, all while continuously learning and refining my skills.</p>
-        </div><!-- End Section Title -->
+  <!-- Titre de la section -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 data-lang="en">Projects</h2>
+    <h2 data-lang="fr" style="display: none;">Projets</h2>
+    
+    <p data-lang="en">Welcome to my project showcase! Here you'll find a selection of my work, where I bring ideas to life through code. From building web applications to creating intuitive user interfaces, each project reflects my commitment to quality and my passion for technology, all while continuously learning and refining my skills.</p>
+    
+    <p data-lang="fr" style="display: none;">Bienvenue dans ma vitrine de projets ! Ici, vous trouverez une sélection de mes travaux, où je donne vie à des idées grâce au code. De la création d'applications web à la conception d'interfaces utilisateur intuitives, chaque projet reflète mon engagement pour la qualité et ma passion pour la technologie, tout en apprenant et en affinant continuellement mes compétences.</p>
+  </div><!-- Fin du Titre de la section -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-web">Web</li>
             <li data-filter=".filter-video">Video</li>
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" data-project="passengerPrediction">
-              <video src="assets/video/Passenger Prediction Demo.mp4" class="img-fluid" alt="passenger-prediction-demo" autoplay muted loop></video>
-              <div class="portfolio-info">
-                <h4>Passenger Flow Algorithm</h4>
-                <p>Princess Juliana International Airport - Sint Maarten</p>
-                <a href="assets/video/Passenger Prediction Demo.mp4" title="Passenger Prediction" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" data-project="passengerPrediction">
+          <video src="assets/video/Passenger Prediction Demo.mp4" class="img-fluid" alt="passenger-prediction-demo" autoplay muted loop></video>
+          <div class="portfolio-info">
+            <h4 data-lang="en">Passenger Flow Algorithm</h4>
+            <h4 data-lang="fr" style="display: none;">Algorithme de Flux de Passagers</h4>
+            <p data-lang="en">Princess Juliana International Airport - Sint Maarten</p>
+            <p data-lang="fr" style="display: none;">Aéroport International Princess Juliana - Saint-Martin</p>
+            <a href="assets/video/Passenger Prediction Demo.mp4" title="Passenger Prediction" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- Fin de l'élément Portfolio -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" data-project="metroLineRennes">
-                <img src="assets/img/projects/Metro_de_Rennes_P1040075.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Metro Line Management System</h4>
-                  <p>Metro Trainlines, Rennes - France</p>
-                  <a href="assets/img/projects/Metro_de_Rennes_P1040075.png" title="Metro Trainlines, Rennes - France" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" data-project="metroLineLyon">
-                <img src="assets/img/projects/ligneD_Lyon.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Metro Line Database Management</h4>
-                  <p>Metro Line D, Lyon - France</p>
-                  <a href="assets/img/projects/Metro_de_Rennes_P1040075.png" title="Metro Line Database Management" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" data-project="metroLineRennes">
+          <img src="assets/img/projects/Metro_de_Rennes_P1040075.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4 data-lang="en">Metro Line Management System</h4>
+            <h4 data-lang="fr" style="display: none;">Système de Gestion des Lignes de Métro</h4>
+            <p data-lang="en">Metro Trainlines, Rennes - France</p>
+            <p data-lang="fr" style="display: none;">Lignes de Métro, Rennes - France</p>
+            <a href="assets/img/projects/Metro_de_Rennes_P1040075.png" title="Metro Trainlines, Rennes - France" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- Fin de l'élément Portfolio -->
 
-          </div><!-- End Portfolio Container -->
-
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" data-project="metroLineLyon">
+          <img src="assets/img/projects/ligneD_Lyon.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4 data-lang="en">Metro Line Database Management</h4>
+            <h4 data-lang="fr" style="display: none;">Gestion de la Base de Données des Lignes de Métro</h4>
+            <p data-lang="en">Metro Line D, Lyon - France</p>
+            <p data-lang="fr" style="display: none;">Ligne D du Métro, Lyon - France</p>
+            <a href="assets/img/projects/Metro_de_Rennes_P1040075.png" title="Metro Line Database Management" data-gallery="portfolio-gallery-branding" class="glightbox preview-link">
+              <i class="bi bi-zoom-in"></i>
+            </a>
+            <a href="project-details.html" title="More Details" class="details-link">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
         </div>
 
-      </div>
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web" data-project="clickAndCollect">
+          <video src="assets/video/ClickNCollectDemo.mp4" class="img-fluid" alt="click-and-collect-demo" autoplay muted loop></video>
+          <div class="portfolio-info">
+            <h4 data-lang="en">Click and Collect Demo</h4>
+            <h4 data-lang="fr" style="display: none;">Démonstration Click & Collect</h4>
+            <p data-lang="en">Click and collect service where clients can purchase their orders and come and pick them up from the shop without having to browse through the physical store.</p>
+            <p data-lang="fr" style="display: none;">Service Click & Collect où les clients peuvent acheter leurs commandes et venir les récupérer en magasin sans avoir à parcourir le magasin physique.</p>
+            <a href="assets/video/ClickNCollectDemo.mp4" title="Click & Collect Demo" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- Fin de l'élément Portfolio -->
 
-    </section><!-- /Portfolio Section -->
+      </div><!-- Fin du conteneur Portfolio -->
+
+    </div>
+
+  </div>
+
+</section><!-- Fin de la Section Portfolio -->
 
     <!-- Services Section -->
-    <section id="services" class="services section dark-background">
+<section id="services" class="services section dark-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Empower your business with my full-stack software development services. 
-          Whether you're looking to build a robust web application, enhance your existing systems, 
-          or create a seamless user experience, let’s bring your vision to life with innovative technology solutions.</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 data-lang="en">Services</h2>
+    <h2 data-lang="fr" style="display: none;">Services</h2>
+    <p data-lang="en">Empower your business with my full-stack software development services. 
+      Whether you're looking to build a robust web application, enhance your existing systems, 
+      or create a seamless user experience, let’s bring your vision to life with innovative technology solutions.</p>
+    <p data-lang="fr" style="display: none;">Dynamisez votre entreprise grâce à mes services de développement logiciel full-stack. 
+      Que vous souhaitiez créer une application web robuste, améliorer vos systèmes existants, 
+      ou créer une expérience utilisateur fluide, réalisons ensemble votre vision grâce à des solutions technologiques innovantes.</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-code-square"></i>
-              </div>
-              <h3>Backend Development</h3>
-              <div class="justified-text">
-              <p>Robust, scalable, and secure backend systems that power your applications. 
-                Whether it's developing APIs, managing server-side logic, functionalities for your interface, or integrating with databases, your backend is built wuth reliability and efficiency.</p>
-            </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-cyan position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+            </svg>
+            <i class="bi bi-code-square"></i>
           </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-window-fullscreen"></i>
-              </div>
-              <h3>Frontend Development</h3>
-              <div class="justified-text">
-              <p>Engaging and user-friendly interfaces that deliver a seamless user experience across all devices. 
-                You will get fully responsive designs that look great and function flawlessly on any screen size.</p>
-            </div>
+          <h3 data-lang="en">Backend Development</h3>
+          <h3 data-lang="fr" style="display: none;">Développement Backend</h3>
+          <div class="justified-text">
+            <p data-lang="en">Robust, scalable, and secure backend systems that power your applications. 
+              Whether it's developing APIs, managing server-side logic, functionalities for your interface, or integrating with databases, your backend is built with reliability and efficiency.</p>
+            <p data-lang="fr" style="display: none;">Des systèmes backend robustes, évolutifs et sécurisés qui alimentent vos applications. 
+              Qu'il s'agisse de développer des API, de gérer la logique côté serveur, des fonctionnalités pour votre interface ou d'intégrer des bases de données, votre backend est construit avec fiabilité et efficacité.</p>
           </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-database-fill"></i>
-              </div>
-              <h3>Database Design and Management</h3>
-              <div class="justified-text">
-              <p>From schema design to data migration, your data is stored securely and is easily accessible when needed in an optimized and secure database.</p>
-            </div>
-          </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <h3>Testing and Quality Assurance</h3>
-              <div class="justified-text">
-              <p>Ensure your software is robust and performs reliably with comprehensive testing and quality assurance. 
-                While no software is completely bug-free, I use a variety of testing methods—including unit, integration, 
-                and end-to-end testing—to minimize issues and ensure your application is as reliable and user-friendly as possible before deployment.</p>
-            </div>
-          </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-git icon"></i>
-              </div>
-              <h3>Version Control and Collaboration Tools</h3>
-              <div class="justified-text">
-              <p>Industry-standard version control systems like Git are employed to manage codebases efficiently and facilitate collaboration. 
-                Development workflows are streamlined, and project histories are well-documented.</p>
-            </div>
-          </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <h3>Maintenance and Support</h3>
-              <div class="justified-text">
-              <p>Ongoing maintenance and support to keep your software running smoothly. 
-                Whether it’s updates, bug fixes, or performance optimization, your application remains up-to-date and secure over time.</p>
-            </div>
-          </div>
-          </div><!-- End Service Item -->
-
         </div>
+      </div><!-- End Service Item -->
 
-      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-orange position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+            </svg>
+            <i class="bi bi-window-fullscreen"></i>
+          </div>
+          <h3 data-lang="en">Frontend Development</h3>
+          <h3 data-lang="fr" style="display: none;">Développement Frontend</h3>
+          <div class="justified-text">
+            <p data-lang="en">Engaging and user-friendly interfaces that deliver a seamless user experience across all devices. 
+              You will get fully responsive designs that look great and function flawlessly on any screen size.</p>
+            <p data-lang="fr" style="display: none;">Interfaces attrayantes et conviviales qui offrent une expérience utilisateur fluide sur tous les appareils. 
+              Vous bénéficierez de conceptions entièrement réactives qui s'adaptent parfaitement et fonctionnent de manière impeccable sur toutes les tailles d'écran.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
 
-    </section><!-- /Services Section -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item item-teal position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+            </svg>
+            <i class="bi bi-database-fill"></i>
+          </div>
+          <h3 data-lang="en">Database Design and Management</h3>
+          <h3 data-lang="fr" style="display: none;">Conception et Gestion de Bases de Données</h3>
+          <div class="justified-text">
+            <p data-lang="en">From schema design to data migration, your data is stored securely and is easily accessible when needed in an optimized and secure database.</p>
+            <p data-lang="fr" style="display: none;">De la conception de schémas à la migration de données, vos données sont stockées en toute sécurité et sont facilement accessibles dans une base de données optimisée et sécurisée.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item item-red position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+            </svg>
+            <i class="bi bi-bounding-box-circles"></i>
+          </div>
+          <h3 data-lang="en">Testing and Quality Assurance</h3>
+          <h3 data-lang="fr" style="display: none;">Tests et Assurance Qualité</h3>
+          <div class="justified-text">
+            <p data-lang="en">Ensure your software is robust and performs reliably with comprehensive testing and quality assurance. 
+              While no software is completely bug-free, I use a variety of testing methods—including unit, integration, 
+              and end-to-end testing—to minimize issues and ensure your application is as reliable and user-friendly as possible before deployment.</p>
+            <p data-lang="fr" style="display: none;">Assurez-vous que votre logiciel est robuste et fonctionne de manière fiable grâce à des tests et une assurance qualité complets. 
+              Bien qu'aucun logiciel ne soit complètement exempt de bogues, j'utilise une variété de méthodes de test - y compris les tests unitaires, d'intégration et de bout en bout - pour minimiser les problèmes et garantir que votre application est aussi fiable et conviviale que possible avant son déploiement.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item item-indigo position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+            </svg>
+            <i class="bi bi-git icon"></i>
+          </div>
+          <h3 data-lang="en">Version Control and Collaboration Tools</h3>
+          <h3 data-lang="fr" style="display: none;">Gestion de Versions et Outils de Collaboration</h3>
+          <div class="justified-text">
+            <p data-lang="en">Industry-standard version control systems like Git are employed to manage codebases efficiently and facilitate collaboration. 
+              Development workflows are streamlined, and project histories are well-documented.</p>
+            <p data-lang="fr" style="display: none;">Les systèmes de gestion de versions standard comme Git sont utilisés pour gérer efficacement les bases de code et faciliter la collaboration. 
+              Les flux de travail de développement sont rationalisés et les historiques de projet sont bien documentés.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item item-pink position-relative">
+          <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+            </svg>
+            <i class="bi bi-chat-square-text"></i>
+          </div>
+          <h3 data-lang="en">Maintenance and Support</h3>
+          <h3 data-lang="fr" style="display: none;">Maintenance et Support</h3>
+          <div class="justified-text">
+            <p data-lang="en">Ongoing maintenance and support to keep your software running smoothly. 
+              Whether it’s updates, bug fixes, or performance optimization, your application remains up-to-date and secure over time.</p>
+            <p data-lang="fr" style="display: none;">Maintenance et support continus pour garantir le bon fonctionnement de votre logiciel. 
+              Qu'il s'agisse de mises à jour, de corrections de bogues ou d'optimisation des performances, votre application reste à jour et sécurisée au fil du temps.</p>
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Let's Connect</h2>
-        <p>We'll build greatness together!</p>
+        <h2 data-lang="en">Let's Connect</h2>
+        <h2 data-lang="fr" style="display: none;">Restons en Contact</h2>
+        <p data-lang="en">We'll build greatness together!</p>
+        <p data-lang="fr" style="display: none;">Construisons l'avenir ensemble !</p>
       </div><!-- End Section Title -->
-
+    
       <div class="container" data-aos="fade" data-aos-delay="100">
-
+    
         <div class="row gy-4">
-
+    
           <div class="col-lg-4">
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Location</h3>
+                <h3 data-lang="en">Location</h3>
+                <h3 data-lang="fr" style="display: none;">Emplacement</h3>
                 <p>France</p>
               </div>
             </div><!-- End Info Item -->
-
+    
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>WhatsApp Me</h3>
+                <a href="https://wa.me/590690887059">
+                  <h3 data-lang="en">WhatsApp Me</h3>
+                  <h3 data-lang="fr" style="display: none;">Contactez-moi sur WhatsApp</h3>
+                </a>
                 <p>+590 690 88 70 59</p>
               </div>
             </div><!-- End Info Item -->
-
+    
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Me</h3>
+                <h3 data-lang="en">Email Me</h3>
+                <h3 data-lang="fr" style="display: none;">Envoyez-moi un email</h3>
                 <p>brandon.hunt978@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
+    
             <div class="robot-logo text-center mt-4" data-aos="fade-up" data-aos-delay="500">
               <img src="assets/img/omnivis_robot-removebg-preview.png" alt="Robot Logo" class="img-fluid" style="max-width: 300px;">
             </div>
           </div>
-
+    
           <div class="col-lg-8">
             <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
+    
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
-
+    
                 <div class="col-md-6 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
-
+    
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                 </div>
-
+    
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
-
+    
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
+    
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+ 
+                  <button type="submit" data-lang="en">Send Message</button>
+                  <button type="submit" data-lang="fr" style="display: none;">Envoyer le message</button>
                 </div>
-
+    
               </div>
             </form>
           </div><!-- End Contact Form -->
-
+    
         </div>
-
+    
       </div>
-
+    
     </section><!-- /Contact Section -->
-
+    
 
     <!-- Resume Section -->
     <section id="resume" class="resume section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Fullstack Developer on a mission to make a difference all while creating efficient, user-friendly experiences with a smile!</p>
+        <h2 data-lang="en">Resume</h2>
+        <h2 data-lang="fr" style="display: none;">CV</h2>
+        <p data-lang="en">Fullstack Developer on a mission to make a difference all while creating efficient, user-friendly experiences with a smile!</p>
+        <p data-lang="fr" style="display: none;">Développeur Fullstack en mission pour faire une différence tout en créant des expériences efficaces et conviviales avec le sourire !</p>
       </div><!-- End Section Title -->
-
+    
       <div class="container">
-
+    
         <div class="row">
-
+    
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
+            <h3 class="resume-title" data-lang="en">Summary</h3>
+            <h3 class="resume-title" data-lang="fr" style="display: none;">Résumé</h3>
+    
             <div class="resume-item pb-0">
-              <h4>Brandon Hunt</h4>
-              <p><em>Innovative and deadline-driven Fullstack Developer with 3+ years of experience maintaining and enhancing technology-centered digital material from initial concept to final, polished deliverable.</em></p>
+              <h4 data-lang="en">Brandon Hunt</h4>
+              <h4 data-lang="fr" style="display: none;">Brandon Hunt</h4>
+              <p data-lang="en"><em>Innovative and deadline-driven Fullstack Developer with 3+ years of experience maintaining and enhancing technology-centered digital material from initial concept to final, polished deliverable.</em></p>
+              <p data-lang="fr" style="display: none;"><em>Développeur Fullstack innovant et respectueux des délais, avec plus de 3 ans d'expérience dans la maintenance et l'amélioration de supports numériques centrés sur la technologie, du concept initial au produit final.</em></p>
               <ul>
-                <li>Lyon, Rhône, France</li>
-                <li>brandon.hunt978@gmail.com</li>
+                <li data-lang="en">Lyon, Rhône, France</li>
+                <li data-lang="fr" style="display: none;">Lyon, Rhône, France</li>
+                <li data-lang="en">brandon.hunt978@gmail.com</li>
+                <li data-lang="fr" style="display: none;">brandon.hunt978@gmail.com</li>
               </ul>
             </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
+    
+            <h3 class="resume-title" data-lang="en">Education</h3>
+            <h3 class="resume-title" data-lang="fr" style="display: none;">Éducation</h3>
+    
             <div class="resume-item">
-              <h4>Engineering Degree In Software Engineering & Telecommunications</h4>
+              <h4 data-lang="en">Engineering Degree In Software Engineering & Telecommunications</h4>
+              <h4 data-lang="fr" style="display: none;">Diplôme d'ingénieur en informatique et réseaux de communications</h4>
               <h5>2022 - 2025</h5>
-              <p><em>CPE Lyon | Graduate school of industrial chemistry and digital science - Lyon, France</em></p>
-              <p>Main subjects: </p>
+              <p data-lang="en"><em>CPE Lyon | Graduate school of industrial chemistry and digital science - Lyon, France</em></p>
+              <p data-lang="fr" style="display: none;"><em>CPE Lyon | École supérieure de Chimie Physique et Electronique et sciences numériques - Lyon, France</em></p>
+              <p data-lang="en">Main subjects: </p>
+              <p data-lang="fr" style="display: none;">Sujets principaux :</p>
               <ul>
                 <li>C Programming</li>
                 <li>Web Development</li>
@@ -515,28 +596,36 @@
                 <li>Law</li>
                 <li>Professional Communication</li>
               </ul>
-                <p>Engineering degree in Software Engineering and Telecommunication expected in 2025</p>
+              <p data-lang="en">Engineering degree in Software Engineering and Telecommunication expected in 2025</p>
+              <p data-lang="fr" style="display: none;">Diplôme d'ingénieur prévu pour 2025</p>
             </div><!-- End Resume Item -->
-
+    
             <div class="resume-item">
-              <h4>Bachelor's Degree IN Automation & Industrial Computing</h4>
+              <h4 data-lang="en">Bachelor's Degree IN Automation & Industrial Computing</h4>
+              <h4 data-lang="fr" style="display: none;">Licence en automatisme et informatique industrielle</h4>
               <h5>2021 - 2022</h5>
-              <p><em>Lyon University, Lyon, France</em></p>
-              <p>Main subjects:</p>
+              <p data-lang="en"><em>Lyon University, Lyon, France</em></p>
+              <p data-lang="fr" style="display: none;"><em>Université de Lyon, Lyon, France</em></p>
+              <p data-lang="en">Main subjects:</p>
+              <p data-lang="fr" style="display: none;">Sujets principaux :</p>
               <ul>
                 <li>C programming</li>
                 <li>Automation</li>
                 <li>SCADA</li>
                 <li>Telecommunication</li>
-              </ul> 
-            <p>Professional degree obtained August 2022</p>
+              </ul>
+              <p data-lang="en">Professional degree obtained August 2022</p>
+              <p data-lang="fr" style="display: none;">Licence professionnel obtenu en août 2022</p>
             </div><!-- End Resume Item -->
-
+    
             <div class="resume-item">
-              <h4>Higher National Diploma IN Automation & Industrial Computing</h4>
+              <h4 data-lang="en">Higher National Diploma IN Electrical & Electronical Engineering & Industrial Computing</h4>
+              <h4 data-lang="fr" style="display: none;">DUT Génie Electrique et Informatique Industrielle</h4>
               <h5>2019 - 2021</h5>
-              <p><em>Lyon University’s Institute of Technology - Lyon, France</em></p>
-              <p>Main subjects:</p>
+              <p data-lang="en"><em>Lyon University’s Institute of Technology - Lyon, France</em></p>
+              <p data-lang="fr" style="display: none;"><em>Institut Universitaire de Technologie de Lyon - Lyon, France</em></p>
+              <p data-lang="en">Main subjects:</p>
+              <p data-lang="fr" style="display: none;">Principaux sujets :</p>
               <ul>
                 <li>C Programming & Industrial Microchips</li>
                 <li>Automation</li>
@@ -544,51 +633,71 @@
                 <li>Telecommunication</li>
                 <li>Physics Science</li>
                 <li>Electronical Engineering</li>
-                <li>Electrical Engineerin</li>
+                <li>Electrical Engineering</li>
                 <li>Professional Communication</li>
               </ul>
-              <p>Higher National Diploma obtained in July 2021</p>
+              <p data-lang="en">Higher National Diploma obtained in July 2021</p>
+              <p data-lang="fr" style="display: none;">DUT obtenu en juillet 2021</p>
             </div><!-- End Resume Item -->
-
+    
           </div>
-
+    
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" data-lang="en">Professional Experience</h3>
+            <h3 class="resume-title" data-lang="fr" style="display: none;">Expérience professionnelle</h3>
+    
             <div class="resume-item">
-              <h4>Software Engineer Trainee</h4>
+              <h4 data-lang="en">Software Engineer Trainee</h4>
+              <h4 data-lang="fr" style="display: none;">Apprenti Ingénieur Informatique</h4>
               <h5>2022 - Present</h5>
-              <p><em>Enfrasys | Rillieux-la-pape 69140</em></p>
+              <p data-lang="en"><em>Enfrasys | Rillieux-la-pape 69140</em></p>
+              <p data-lang="fr" style="display: none;"><em>Enfrasys | Rillieux-la-pape 69140</em></p>
               <ul>
-                <li>Underground Train Database Management</li>
-                <li>Web Server Development</li>
-                <li>SCADA Applications</li>
-                <li>Project Management</li>
-                <li>JAVA/C# Programming</li>
-                <li>Subway Application Maintenance</li>
-                <li>DOT NET Infrastructure</li>              
+                <li data-lang="en">Underground Train Database Management</li>
+                <li data-lang="fr" style="display: none;">Gestion de la base de données de métros</li>
+                <li data-lang="en">Web Server Development</li>
+                <li data-lang="fr" style="display: none;">Développement de serveur Web</li>
+                <li data-lang="en">SCADA Applications</li>
+                <li data-lang="fr" style="display: none;">Supervisions</li>
+                <li data-lang="en">Project Management</li>
+                <li data-lang="fr" style="display: none;">Gestion de projet</li>
+                <li data-lang="en">JAVA/C# Programming</li>
+                <li data-lang="fr" style="display: none;">Programmation JAVA/C#</li>
+                <li data-lang="en">Subway Application Maintenance</li>
+                <li data-lang="fr" style="display: none;">Maintenance des applications de supervisions métro</li>
+                <li data-lang="en">DOT NET Infrastructure</li>
+                <li data-lang="fr" style="display: none;">Infrastructure DOT NET</li>
               </ul>
             </div><!-- End Resume Item -->
-
+    
             <div class="resume-item">
-              <h4>Software Engineer International Intern</h4>
+              <h4 data-lang="en">Software Engineer International Intern</h4>
+              <h4 data-lang="fr" style="display: none;">Stagiaire Ingénieur Informatique à l'international</h4>
               <h5>Summer 2024</h5>
-              <p><em>Princess Juliana International Airport | Sint Maarten, Dutch West Indies</em></p>
+              <p data-lang="en"><em>Princess Juliana International Airport | Sint Maarten, Dutch West Indies</em></p>
+              <p data-lang="fr" style="display: none;"><em>Aéroport international Princess Juliana | Sint Maarten, Antilles néerlandaises</em></p>
               <ul>
-                <li>Passenger Prediction Web Application</li>
-                <li>User Form Digitization</li>
-                <li>Passenger Prediction Software Development</li>
-                <li>Airport Database Management and optimization</li>
-                <li>Development Server API Integration</li>
-                <li>Intranet Portal Maintainance and Development</li>
+                <li data-lang="en">Passenger Prediction Web Application</li>
+                <li data-lang="fr" style="display: none;">Application Web de prédiction des passagers</li>
+                <li data-lang="en">User Form Digitization</li>
+                <li data-lang="fr" style="display: none;">Numérisation des formulaires utilisateurs</li>
+                <li data-lang="en">Passenger Prediction Software Development</li>
+                <li data-lang="fr" style="display: none;">Développement de logiciels de prédiction des passagers</li>
+                <li data-lang="en">Airport Database Management and optimization</li>
+                <li data-lang="fr" style="display: none;">Gestion et optimisation de la base de données aéroportuaire</li>
+                <li data-lang="en">Development Server API Integration</li>
+                <li data-lang="fr" style="display: none;">Intégration de l'API du serveur de développement</li>
+                <li data-lang="en">Intranet Portal Maintainance and Development</li>
+                <li data-lang="fr" style="display: none;">Maintenance et développement du portail intranet</li>
               </ul>
             </div><!-- End Resume Item -->
-
+    
           </div>
         </div>
       </div>
-
+    
     </section><!-- /Resume section-->
-
+    
     </main>
 
     <footer id="footer" class="footer position-relative dark-background">
@@ -601,6 +710,7 @@
         </div>
         <div class="social-links d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/brandon-hunt978/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/590690887059"><i class="bi bi-whatsapp"></i></a>
         </div>
         <div class="container">
           <div class="credits">
@@ -612,6 +722,11 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Language Switcher -->
+  <div class="lang active">
+    <button id="lang-switch" class="btn btn-primary" style="--bs-btn-bg: var(--accent-color);">FR</button>
+  </div>
 
   <!-- Preloader -->
   <div id="preloader"></div>

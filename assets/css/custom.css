@@ -20,13 +20,31 @@
     text-align: center; /* Centers the text below the icon */
 }
 
-.skill-icon {
-    font-size: 6em; /* Makes the icons bigger */
-    color: #4A4A4A; /* Color of the icons */
+.lang{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
 }
 
-.skill-text {
-    margin-top: 10px; /* Space between the icon and the text */
-    font-size: 1.5rem; /* Adjusts the size of the text */
-    color: #4A4A4A; /* Color of the text */
+.lang.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+  }
+  
+.language-switcher button {
+padding: 10px;
+border-radius: 50px;
+background-color: #343a40;
+color: white;
+border: none;
+cursor: pointer;
 }

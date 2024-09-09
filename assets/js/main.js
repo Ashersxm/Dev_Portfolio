@@ -260,3 +260,19 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
     window.location.href = 'project-details.html';
   });
 });
+
+const langSwitch = document.getElementById('lang-switch');
+langSwitch.addEventListener('click', function() {
+  const lang = langSwitch.textContent === 'FR' ? 'fr' : 'en';
+  const elements = document.querySelectorAll('[data-lang]');
+  
+  elements.forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+
+  langSwitch.textContent = lang === 'en' ? 'FR' : 'EN';
+});
