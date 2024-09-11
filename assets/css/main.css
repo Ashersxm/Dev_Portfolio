@@ -311,18 +311,20 @@ color-mix(in srgb, var(--default-color), transparent 30%);
   max-width: 140px; /* Expands to show text on hover */
 }
 
+/* Mobile-specific styles to show the text */
 @media (max-width: 768px) {
-  .navmenu a {
-    max-width: 100%; /* Allow full width on mobile screens */
-  }
-
   .navmenu a span {
-    display: none; /* Text will only show on hover for larger screens */
+    display: inline-block; /* Ensure the text is displayed */
+    opacity: 1; /* Set opacity to visible in mobile */
   }
 
   .navmenu a:hover span {
-    display: inline-block;
-    opacity: 1;
+    opacity: 1; /* Keep the text visible on hover in mobile too */
+  }
+
+  /* Optionally ensure the links have enough space in mobile */
+  .navmenu a {
+    max-width: 100%; /* Allow full width for mobile links */
   }
 }
 
@@ -1521,6 +1523,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+  /*.starter-section {
+ Add your styles here 
+}*/
