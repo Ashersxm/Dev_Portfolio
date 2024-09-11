@@ -299,7 +299,7 @@ color-mix(in srgb, var(--default-color), transparent 30%);
 /* Ensure the icon is always visible */
 .navmenu a i {
   font-size: 20px; /* Adjust icon size if necessary */
-}
+}seczz
 
 /* Ensure smooth transition between language changes */
 .navmenu a {
@@ -522,7 +522,8 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   position: relative;
 }
 
